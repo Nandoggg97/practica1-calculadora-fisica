@@ -49,7 +49,8 @@ class Program
                 " Distancia (m): ");
             double t1 = EntradaUsuario.PedirDouble(
                 " Tiempo (s): ");
-            double v = Calculos.CalcularVelocidad(d1, t1);
+            double v = 0;
+            Calculos.CalcularVelocidad(d1, t1, ref v);
             Console.WriteLine(
                 $"\nVelocidad = {v:F2} m/s");
             break;
@@ -58,7 +59,8 @@ class Program
             double v2 = EntradaUsuario.PedirDouble(
                 "Velocidad (m/s): ");
             double t2 = EntradaUsuario.PedirDouble("Tiempo (s): ");
-            double d = Calculos.CalcularDistancia(v2, t2);
+            double d = 0;
+            Calculos.CalcularDistancia(v2, t2, ref d);
             Console.WriteLine(
                 $"\nDistancia = {d:F2} m");
             break;

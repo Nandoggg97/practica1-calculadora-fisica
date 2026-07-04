@@ -10,19 +10,21 @@ static class Calculos
     /// <param name="distanciaMetros">Distancia en metros</param>
     /// <param name="tiempoSegundos">Tiempo en segundos (> 0)</param>
     /// <returns>Velocidad en metros por segundo</returns>
-    public static double CalcularVelocidad(
+    public static void CalcularVelocidad(
         double distanciaMetros,
-        double tiempoSegundos)
+        double tiempoSegundos,
+        ref double velocidad)
     {
-        return distanciaMetros / tiempoSegundos;
+        velocidad = distanciaMetros / tiempoSegundos;
     }
     
 /// <sumary>Calcula distancia: d = v * t</summary>
-public static double CalcularDistancia(
+public static void CalcularDistancia(
     double velocidadMs,
-    double tiempoSegundos)
+    double tiempoSegundos,
+    ref double distancia)
     {
-        return velocidadMs * tiempoSegundos;
+        distancia = velocidadMs * tiempoSegundos;
     }
 
 /// <summary>Calcula tiempo: t = d / v</summary>
