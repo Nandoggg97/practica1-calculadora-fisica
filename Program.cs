@@ -68,7 +68,8 @@ class Program
             case "3":
             double d3 = EntradaUsuario.PedirDouble("Distancia (m): ");
             double v3 = EntradaUsuario.PedirDouble("Velocidad (m/s): ");
-            double t = Calculos.CalcularTiempo(d3, v3);
+            double t;
+            Calculos.CalcularTiempo(d3, v3, out t);
             Console.WriteLine(
                 $"\nTiempo = {t:F2} s");
             break;

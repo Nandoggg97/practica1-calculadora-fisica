@@ -28,10 +28,11 @@ public static void CalcularDistancia(
     }
 
 /// <summary>Calcula tiempo: t = d / v</summary>
-public static double CalcularTiempo(
+public static void CalcularTiempo(
     double distanciaMetros,
-    double velocidadMS)
+    double velocidadMS,
+    out double tiempo)
     {
-        return distanciaMetros / velocidadMS;
+        tiempo = distanciaMetros / velocidadMS;
     }
 }
