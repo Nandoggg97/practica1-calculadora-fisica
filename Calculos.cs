@@ -18,13 +18,13 @@ static class Calculos
         velocidad = distanciaMetros / tiempoSegundos;
     }
     
-/// <sumary>Calcula distancia: d = v * t</summary>
+/// <summary>Calcula distancia: d = v * t</summary>
 public static void CalcularDistancia(
-    double velocidadMs,
+    double velocidadMS,
     double tiempoSegundos,
     ref double distancia)
     {
-        distancia = velocidadMs * tiempoSegundos;
+        distancia = velocidadMS * tiempoSegundos;
     }
 
 /// <summary>Calcula tiempo: t = d / v</summary>
